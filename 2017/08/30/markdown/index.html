@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -102,10 +102,14 @@
 <meta property="og:site_name" content="夜之所往">
 <meta property="og:description" content="什么是markdown Markdown 的目标是实现「易读易写」 Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。 Markdown 语法的目标是：成为一种适用于网络的书写语言。Markdown 不是想要取代 HTML，甚至也没有要和它相近， 它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-30T14:07:29.464Z">
+<meta property="og:image" content="http://yoursite.com/2017/08/30/markdown/图片地址%20“图片Title”">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504200035729&di=6ebfd4a2ac8e9a70ad35f42af881e3a3&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504200035729&di=6ebfd4a2ac8e9a70ad35f42af881e3a3&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png">
+<meta property="og:updated_time" content="2017-08-31T14:38:01.195Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法">
 <meta name="twitter:description" content="什么是markdown Markdown 的目标是实现「易读易写」 Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。 Markdown 语法的目标是：成为一种适用于网络的书写语言。Markdown 不是想要取代 HTML，甚至也没有要和它相近， 它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/30/markdown/图片地址%20“图片Title”">
 
 
 
@@ -113,7 +117,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.2',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -307,19 +311,162 @@
       
         <h3 id="什么是markdown"><a href="#什么是markdown" class="headerlink" title="什么是markdown"></a>什么是markdown</h3><p> Markdown 的目标是实现「易读易写」<br> Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。<br> Markdown 语法的目标是：成为一种适用于网络的书写语言。Markdown 不是想要取代 HTML，甚至也没有要和它相近，<br> 它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来，<br> HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。<br> HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。<br><a id="more"></a></p>
 <h4 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1.标题设置（让字体变大，和word的标题意思一样）"></a>1.标题设置（让字体变大，和word的标题意思一样）</h4><p>   在Markdown当中设置标题，有两种方式：<br>   第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>   第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
+<p>   代码：</p>
 <pre><code># This is an H1 
 ## This is an H2`
 ### This is an H3
 #### This is an H4
 ##### This is an H5
 ###### This is an H6  
-</code></pre><blockquote>
+</code></pre><p>   显示效果：</p>
+<blockquote>
 <h1 id="This-is-an-H1"><a href="#This-is-an-H1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2"><a href="#This-is-an-H2" class="headerlink" title="This is an H2"></a>This is an H2</h2><h3 id="This-is-an-H3"><a href="#This-is-an-H3" class="headerlink" title="This is an H3"></a>This is an H3</h3><h4 id="This-is-an-H4"><a href="#This-is-an-H4" class="headerlink" title="This is an H4"></a>This is an H4</h4><h5 id="This-is-an-H5"><a href="#This-is-an-H5" class="headerlink" title="This is an H5"></a>This is an H5</h5><h6 id="This-is-an-H6"><a href="#This-is-an-H6" class="headerlink" title="This is an H6"></a>This is an H6</h6></blockquote>
+<p>   代码：</p>
 <pre><code>This is an H1 
 =====
 This is an H2`
 -----
-</code></pre><p>   This is an H1<br>   =<br>   This is an H2`<br>   -</p>
+</code></pre><p>   显示效果：</p>
+<blockquote>
+<p>This is an H1<br>=<br>This is an H2`<br>-<br>  个人觉得第一种方法更简洁显目</p>
+</blockquote>
+<h4 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h4><p>   通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。</p>
+<p>  代码：</p>
+<pre><code>&gt;     加上5个blank
+&gt; 惟楚有才                                                                                      
+&gt; 于斯为盛
+</code></pre><p>   显示效果：</p>
+<blockquote>
+<pre><code>加上5个blank
+</code></pre><p>惟楚有才<br>于斯为盛</p>
+</blockquote>
+<p>   另外，块注释允许多层叠加，例如：</p>
+<p>   代码：</p>
+<pre><code>&gt;&gt;&gt; * 请问 Markdwon 怎么用？ - 小白
+&gt;&gt; * 自己看教程！ - 愤青
+&gt; * 教程在哪？ - 小白
+</code></pre><p>   显示效果</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>请问 Markdwon 怎么用？ - 小白</li>
+<li>自己看教程！ - 愤青</li>
+<li>教程在哪？ - 小白</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<h4 id="3-斜体和粗体"><a href="#3-斜体和粗体" class="headerlink" title="3. 斜体和粗体"></a>3. 斜体和粗体</h4><p> 斜体：将需要设置为斜体的文字两端使用1个“<em>”或者“_”夹起来<br> 粗体：将需要设置为斜体的文字两端使用2个“</em>”或者“_”夹起来<br>代码：</p>
+<pre><code>*斜体*或_斜体helloWord_
+**粗体**
+***加粗斜体helloWord***
+~~删除线~~
+</code></pre><ul>
+<li><em>斜体</em> 或 <em>斜体helloWord</em></li>
+<li><strong>粗体</strong></li>
+<li><strong><em>加粗斜体helloWord</em></strong></li>
+<li><del>删除线</del></li>
+</ul>
+<h4 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h4><p> 在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
+<p> 代码：</p>
+<pre><code>- 无序列表项 一
+- 无序列表项 二
+- 无序列表项 三
+</code></pre><p>  显示效果：</p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li><p>无序列表项 三</p>
+<h4 id="5-有序列表"><a href="#5-有序列表" class="headerlink" title="5. 有序列表"></a>5. 有序列表</h4><p>使用数字后面跟上句号。（还要有空格）</p>
+<p>代码：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<p>显示效果：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<p>这里它的排序是从第一位开始的，与后面的无关，例如：</p>
+<p>代码：</p>
+<ol>
+<li>有序列表项 三</li>
+<li>有序列表项 一</li>
+<li>有序列表项 五</li>
+</ol>
+<p>显示效果：</p>
+<ol>
+<li>有序列表项 三</li>
+<li>有序列表项 一</li>
+<li>有序列表项 五</li>
+</ol>
+</li>
+</ul>
+<h4 id="6-链接（Links）"><a href="#6-链接（Links）" class="headerlink" title="6. 链接（Links）"></a>6. 链接（Links）</h4><p>  Markdown中有两种方式，实现链接，分别为行内式和参考式两种形式。</p>
+<p>  不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
+<ol>
+<li><p>行内式 要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可</p>
+<p> 代码：</p>
+<pre><code>[构互动](http://edu.bgou.top/ &quot;welcom&quot;)是个知识分享平台
+</code></pre><p> 显示效果：</p>
+<p> <a href="http://edu.bgou.top/" title="welcom" target="_blank" rel="external">构互动</a>是个知识分享平台</p>
+</li>
+</ol>
+<ol>
+<li><p>参考式：<br> 参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
+<p> 代码</p>
+<pre><code>你可以在[baidu][1]或者[Google][2]中搜索[构互动][3]来找到我们的平台.
+[1]: http://www.baidu.com/ &apos;百度搜索&apos;
+[2]: http://google.com/    &apos;谷歌搜索&apos;
+[3]: http://edu.bgou.top/   构互动 
+</code></pre><p>显示效果：</p>
+</li>
+</ol>
+<p>   你可以在[baidu][1]或者[Google][2]中搜索[构互动][3]来找到我们的平台.  </p>
+<p>   [1]: <a href="http://www.baidu.com/" target="_blank" rel="external">http://www.baidu.com/</a> ‘百度搜索’<br>   [2]: <a href="http://google.com/" target="_blank" rel="external">http://google.com/</a>   ‘谷歌搜索’<br>   [3]: <a href="http://edu.bgou.top/" target="_blank" rel="external">http://edu.bgou.top/</a>   ‘构互动’</p>
+<pre><code>链接内容定义的形式为：
+
+ 方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字
+ 接着一个冒号
+ 接着一个以上的空格或制表符
+ 接着链接的网址
+ 选择性地接着 title 内容，可以用单引号、双引号或是括弧包着  
+
+ 链接网址也可以用方括号包起来：
+
+ 链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写
+
+ 隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号
+</code></pre><p>   代码：</p>
+<pre><code>你可以在[baidu][]或者[Google][]中搜索[构互动][]来找到我们的平台.
+
+   [BAIDU]: &lt;http://www.baidu.com/&gt; &apos;百度搜索&apos;
+   [GOOGLE]:  http://google.com/   &quot;谷歌搜索&quot;
+   [构互动]:   http://edu.bgou.top/   (构互动)
+</code></pre><p>   显示效果：</p>
+<p>   你可以在[baidu][]或者<a href="http://google.com/" title="谷歌搜索" target="_blank" rel="external">Google</a>中搜索<a href="http://edu.bgou.top/" title="构互动" target="_blank" rel="external">构互动</a>来找到我们的平台.</p>
+<p>   [BAIDU]: <a href="http://www.baidu.com/" target="_blank" rel="external">http://www.baidu.com/</a> ‘百度搜索’</p>
+<p>   例子中把这几种语法都体现了，其中，隐式链接标记功能比较好用，有点像参考链接的意思，易读易理解。</p>
+<h4 id="7-图片（Images）"><a href="#7-图片（Images）" class="headerlink" title="7. 图片（Images）"></a>7. 图片（Images）</h4><p>  图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
+<p>  语法说明：<img src="图片地址 “图片Title”" alt="图片Alt"></p>
+<p>  代码：</p>
+<pre><code>1. 内联方式：![哈士奇](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png &quot;哈士奇&quot;)
+</code></pre><p>  显示效果：</p>
+<p>  <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png" alt="哈士奇" title="哈士奇"></p>
+<p>  参考式：</p>
+<p>  代码：</p>
+<pre><code>![哈士奇][dog] 
+
+[dog]: https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png &quot;哈士奇&quot;
+</code></pre><p>显示效果：</p>
+<p>  <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png" alt="哈士奇" title="哈士奇"> </p>
+<h4 id="8-代码（HTML中所谓的Code）"><a href="#8-代码（HTML中所谓的Code）" class="headerlink" title="8. 代码（HTML中所谓的Code）"></a>8. 代码（HTML中所谓的Code）</h4><p>  实现方式有两种：<br>  第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>  第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
+<h4 id="9-脚注（footnote）"><a href="#9-脚注（footnote）" class="headerlink" title="9. 脚注（footnote）"></a>9. 脚注（footnote）</h4><p>  实现方式如下：<br>  hello<a href="hi">^hello</a></p>
+<h4 id="10-下划线"><a href="#10-下划线" class="headerlink" title="10. 下划线"></a>10. 下划线</h4><p>  在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）  </p>
 
       
     </div>
@@ -454,7 +601,7 @@ This is an H2`
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-标题设置（让字体变大，和word的标题意思一样）"><span class="nav-number">1.1.</span> <span class="nav-text">1.标题设置（让字体变大，和word的标题意思一样）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-an-H1"><span class="nav-number"></span> <span class="nav-text">This is an H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2"><span class="nav-number"></span> <span class="nav-text">This is an H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#This-is-an-H3"><span class="nav-number">1.</span> <span class="nav-text">This is an H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#This-is-an-H4"><span class="nav-number">1.1.</span> <span class="nav-text">This is an H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#This-is-an-H5"><span class="nav-number">1.1.1.</span> <span class="nav-text">This is an H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-an-H6"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">This is an H6</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-标题设置（让字体变大，和word的标题意思一样）"><span class="nav-number">1.1.</span> <span class="nav-text">1.标题设置（让字体变大，和word的标题意思一样）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-an-H1"><span class="nav-number"></span> <span class="nav-text">This is an H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2"><span class="nav-number"></span> <span class="nav-text">This is an H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#This-is-an-H3"><span class="nav-number">1.</span> <span class="nav-text">This is an H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#This-is-an-H4"><span class="nav-number">1.1.</span> <span class="nav-text">This is an H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#This-is-an-H5"><span class="nav-number">1.1.1.</span> <span class="nav-text">This is an H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-an-H6"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">This is an H6</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-块注释（blockquote）"><span class="nav-number">1.2.</span> <span class="nav-text">2. 块注释（blockquote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-斜体和粗体"><span class="nav-number">1.3.</span> <span class="nav-text">3. 斜体和粗体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-无序列表"><span class="nav-number">1.4.</span> <span class="nav-text">4. 无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-有序列表"><span class="nav-number">1.5.</span> <span class="nav-text">5. 有序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-链接（Links）"><span class="nav-number">1.6.</span> <span class="nav-text">6. 链接（Links）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-图片（Images）"><span class="nav-number">1.7.</span> <span class="nav-text">7. 图片（Images）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-代码（HTML中所谓的Code）"><span class="nav-number">1.8.</span> <span class="nav-text">8. 代码（HTML中所谓的Code）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-脚注（footnote）"><span class="nav-number">1.9.</span> <span class="nav-text">9. 脚注（footnote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-下划线"><span class="nav-number">1.10.</span> <span class="nav-text">10. 下划线</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -491,7 +638,7 @@ This is an H2`
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.2</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
 
 
         
@@ -574,6 +721,13 @@ This is an H2`
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
