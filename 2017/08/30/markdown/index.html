@@ -105,7 +105,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/08/30/markdown/图片地址%20“图片Title”">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504200035729&di=6ebfd4a2ac8e9a70ad35f42af881e3a3&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1504200035729&di=6ebfd4a2ac8e9a70ad35f42af881e3a3&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png">
-<meta property="og:updated_time" content="2017-08-31T14:38:01.195Z">
+<meta property="og:updated_time" content="2017-09-01T14:09:49.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法">
 <meta name="twitter:description" content="什么是markdown Markdown 的目标是实现「易读易写」 Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。 Markdown 语法的目标是：成为一种适用于网络的书写语言。Markdown 不是想要取代 HTML，甚至也没有要和它相近， 它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看">
@@ -368,24 +368,38 @@ This is an H2`
 <li><strong><em>加粗斜体helloWord</em></strong></li>
 <li><del>删除线</del></li>
 </ul>
-<h4 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h4><p> 在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
-<p> 代码：</p>
+<h4 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h4><ol>
+<li><p>列表  在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
+<p>代码：</p>
 <pre><code>- 无序列表项 一
 - 无序列表项 二
 - 无序列表项 三
-</code></pre><p>  显示效果：</p>
+</code></pre><p>显示效果：</p>
 <ul>
 <li>无序列表项 一</li>
 <li>无序列表项 二</li>
-<li><p>无序列表项 三</p>
+<li>无序列表项 三</li>
+</ul>
+<ol>
+<li>排版</li>
+</ol>
+<p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
+<p>代码: </p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.<br>Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+<p>显示效果：</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,<br>viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.<br>Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
 <h4 id="5-有序列表"><a href="#5-有序列表" class="headerlink" title="5. 有序列表"></a>5. 有序列表</h4><p>使用数字后面跟上句号。（还要有空格）</p>
 <p>代码：</p>
-<ol>
-<li>有序列表项 一</li>
-<li>有序列表项 二</li>
-<li>有序列表项 三</li>
-</ol>
-<p>显示效果：</p>
+<pre><code>1. 有序列表项 一
+2. 有序列表项 二
+3. 有序列表项 三
+</code></pre><p>显示效果：</p>
 <ol>
 <li>有序列表项 一</li>
 <li>有序列表项 二</li>
@@ -405,18 +419,18 @@ This is an H2`
 <li>有序列表项 五</li>
 </ol>
 </li>
-</ul>
+</ol>
 <h4 id="6-链接（Links）"><a href="#6-链接（Links）" class="headerlink" title="6. 链接（Links）"></a>6. 链接（Links）</h4><p>  Markdown中有两种方式，实现链接，分别为行内式和参考式两种形式。</p>
 <p>  不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
 <ol>
 <li><p>行内式 要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可</p>
 <p> 代码：</p>
 <pre><code>[构互动](http://edu.bgou.top/ &quot;welcom&quot;)是个知识分享平台
+ &lt;http://edu.bgou.top&gt; 简短链接方式
 </code></pre><p> 显示效果：</p>
 <p> <a href="http://edu.bgou.top/" title="welcom" target="_blank" rel="external">构互动</a>是个知识分享平台</p>
+<p>  <a href="http://edu.bgou.top" target="_blank" rel="external">http://edu.bgou.top</a> 简短链接方式</p>
 </li>
-</ol>
-<ol>
 <li><p>参考式：<br> 参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
 <p> 代码</p>
 <pre><code>你可以在[baidu][1]或者[Google][2]中搜索[构互动][3]来找到我们的平台.
@@ -464,9 +478,114 @@ This is an H2`
 [dog]: https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png &quot;哈士奇&quot;
 </code></pre><p>显示效果：</p>
 <p>  <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1504200035729&amp;di=6ebfd4a2ac8e9a70ad35f42af881e3a3&amp;imgtype=0&amp;src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201605%2F28%2F20160528093526_FwHvd.thumb.700_0.png" alt="哈士奇" title="哈士奇"> </p>
-<h4 id="8-代码（HTML中所谓的Code）"><a href="#8-代码（HTML中所谓的Code）" class="headerlink" title="8. 代码（HTML中所谓的Code）"></a>8. 代码（HTML中所谓的Code）</h4><p>  实现方式有两种：<br>  第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>  第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
-<h4 id="9-脚注（footnote）"><a href="#9-脚注（footnote）" class="headerlink" title="9. 脚注（footnote）"></a>9. 脚注（footnote）</h4><p>  实现方式如下：<br>  hello<a href="hi">^hello</a></p>
-<h4 id="10-下划线"><a href="#10-下划线" class="headerlink" title="10. 下划线"></a>10. 下划线</h4><p>  在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）  </p>
+<h4 id="8-代码（HTML中所谓的Code）"><a href="#8-代码（HTML中所谓的Code）" class="headerlink" title="8. 代码（HTML中所谓的Code）"></a>8. 代码（HTML中所谓的Code）</h4><p>  实现方式有两种：</p>
+<ol>
+<li><p>简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p>
+<p>代码：</p>
+<p> Use the <code>printf()</code> function.<br> <code>There is a literal backtick (`) here.</code></p>
+<p>显示效果：</p>
+<p>Use the <code>printf()</code> function.</p>
+<p><code>There is a literal backtick (`) here.</code></p>
+</li>
+</ol>
+<ol>
+<li>大片文字需要实现代码框。使用Tab和四个空格。</li>
+</ol>
+<p>   代码：</p>
+<pre><code>#include &lt;stdio.h&gt;
+   int main(void)
+   {
+       printf(&quot;Hello world\n&quot;);
+   }
+</code></pre><p>  显示效果</p>
+<pre><code>#include &lt;stdio.h&gt;
+  int main(void)
+  {
+      printf(&quot;Hello world\n&quot;);
+  }
+</code></pre><h4 id="9-HTML原始代码"><a href="#9-HTML原始代码" class="headerlink" title="9. HTML原始代码"></a>9. HTML原始代码</h4><p> 在代码区段内，&amp; 和方括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易</p>
+<p> 代码： </p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th rowspan=&quot;2&quot;&gt;值班人员&lt;/th&gt;
+        &lt;th&gt;星期一&lt;/th&gt;
+        &lt;th&gt;星期二&lt;/th&gt;
+        &lt;th&gt;星期三&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;李强&lt;/td&gt;
+        &lt;td&gt;张明&lt;/td&gt;
+        &lt;td&gt;王平&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>显示效果：</p>
+<table><br>    <tr><br>        <th rowspan="2">值班人员</th><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>李强</td><br>        <td>张明</td><br>        <td>王平</td><br>    </tr><br></table>
+
+<h4 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h4><p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。</p>
+<p>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
+<p>代码：</p>
+<pre><code>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
+[^1]:Markdown是一种纯文本标记语言
+[^2]:HyperText Markup Language 超文本标记语言
+[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
+</code></pre><p>显示效果：</p>
+<p>我使用的是webstom<a href="webstom是一个前端开发工具">^1</a>进行编写，它的功能很强大，不过要装上一个专用markdown插件[^2]才能识别</p>
+<h4 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h4><p>  你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>  当前后都有段落时，请空出一行：</p>
+<p>代码：</p>
+<pre><code>我是分割线上方
+
+ ---
+
+ 我是分割线下方
+</code></pre><p> 显示效果</p>
+<p>  我是分割线上方</p>
+<hr>
+<p>   我是分割线下方</p>
+<h4 id="12-内容目录"><a href="#12-内容目录" class="headerlink" title="12. 内容目录"></a>12. 内容目录</h4><pre><code>在段落中填写 [TOC] 以显示全文内容的目录结构。
+
+效果参见最上方的目录
+</code></pre><h4 id="13-公式"><a href="#13-公式" class="headerlink" title="13. 公式"></a>13. 公式</h4><p>  当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：</p>
+<p>  代码：</p>
+<pre><code>$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+</code></pre><p>   显示效果：</p>
+<p>  $$\sum_{i=1}^n a_i=0$$<br>  $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x<em>n^2 $$<br>  $$\sum^{j-1}</em>{k=0}{\widehat{\gamma}_{kj} z_k}$$</p>
+<h4 id="14-转义符"><a href="#14-转义符" class="headerlink" title="14. 转义符"></a>14. 转义符</h4><p>  如果你的描述中需要用到 markdown 的符号，比如 <em> # * 等，但又不想它被转义，这时候可以在这些符号前加反斜杠，如 \</em> # * 进行避免。</p>
+<p>代码：</p>
+<pre><code>\_不想这里的文本变斜体\_
+\*\*不想这里的文本被加粗\*\*
+</code></pre><p>显示效果：</p>
+<p>_不想这里的文本变斜体_<br>**不想这里的文本被加粗**</p>
+<h4 id="15-流程图和图标"><a href="#15-流程图和图标" class="headerlink" title="15. 流程图和图标"></a>15. 流程图和图标</h4><ol>
+<li>图表：  不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。<br>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。<br>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</li>
+</ol>
+<p>   代码：</p>
+<pre><code>产品|价格
+-|-:
+Leanote 高级账号|60元/年
+Leanote 超级账号|120元/年
+</code></pre><p>   显示效果：</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th style="text-align:right">价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>   Leanote 高级账号</td>
+<td style="text-align:right">60元/年</td>
+</tr>
+<tr>
+<td>   Leanote 超级账号</td>
+<td style="text-align:right">120元/年</td>
+</tr>
+</tbody>
+</table>
+<p>   流程图详解<a href="https://segmentfault.com/a/1190000006247465" target="_blank" rel="external">博客</a></p>
+<p>[^2]:在setting中寻找plugin,然后搜索MarkDown Support插件</p>
 
       
     </div>
@@ -601,7 +720,7 @@ This is an H2`
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-标题设置（让字体变大，和word的标题意思一样）"><span class="nav-number">1.1.</span> <span class="nav-text">1.标题设置（让字体变大，和word的标题意思一样）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-an-H1"><span class="nav-number"></span> <span class="nav-text">This is an H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2"><span class="nav-number"></span> <span class="nav-text">This is an H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#This-is-an-H3"><span class="nav-number">1.</span> <span class="nav-text">This is an H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#This-is-an-H4"><span class="nav-number">1.1.</span> <span class="nav-text">This is an H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#This-is-an-H5"><span class="nav-number">1.1.1.</span> <span class="nav-text">This is an H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-an-H6"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">This is an H6</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-块注释（blockquote）"><span class="nav-number">1.2.</span> <span class="nav-text">2. 块注释（blockquote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-斜体和粗体"><span class="nav-number">1.3.</span> <span class="nav-text">3. 斜体和粗体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-无序列表"><span class="nav-number">1.4.</span> <span class="nav-text">4. 无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-有序列表"><span class="nav-number">1.5.</span> <span class="nav-text">5. 有序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-链接（Links）"><span class="nav-number">1.6.</span> <span class="nav-text">6. 链接（Links）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-图片（Images）"><span class="nav-number">1.7.</span> <span class="nav-text">7. 图片（Images）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-代码（HTML中所谓的Code）"><span class="nav-number">1.8.</span> <span class="nav-text">8. 代码（HTML中所谓的Code）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-脚注（footnote）"><span class="nav-number">1.9.</span> <span class="nav-text">9. 脚注（footnote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-下划线"><span class="nav-number">1.10.</span> <span class="nav-text">10. 下划线</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是markdown"><span class="nav-number">1.</span> <span class="nav-text">什么是markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-标题设置（让字体变大，和word的标题意思一样）"><span class="nav-number">1.1.</span> <span class="nav-text">1.标题设置（让字体变大，和word的标题意思一样）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#This-is-an-H1"><span class="nav-number"></span> <span class="nav-text">This is an H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2"><span class="nav-number"></span> <span class="nav-text">This is an H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#This-is-an-H3"><span class="nav-number">1.</span> <span class="nav-text">This is an H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#This-is-an-H4"><span class="nav-number">1.1.</span> <span class="nav-text">This is an H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#This-is-an-H5"><span class="nav-number">1.1.1.</span> <span class="nav-text">This is an H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#This-is-an-H6"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">This is an H6</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-块注释（blockquote）"><span class="nav-number">1.2.</span> <span class="nav-text">2. 块注释（blockquote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-斜体和粗体"><span class="nav-number">1.3.</span> <span class="nav-text">3. 斜体和粗体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-无序列表"><span class="nav-number">1.4.</span> <span class="nav-text">4. 无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-有序列表"><span class="nav-number">1.5.</span> <span class="nav-text">5. 有序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-链接（Links）"><span class="nav-number">1.6.</span> <span class="nav-text">6. 链接（Links）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-图片（Images）"><span class="nav-number">1.7.</span> <span class="nav-text">7. 图片（Images）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-代码（HTML中所谓的Code）"><span class="nav-number">1.8.</span> <span class="nav-text">8. 代码（HTML中所谓的Code）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-HTML原始代码"><span class="nav-number">1.9.</span> <span class="nav-text">9. HTML原始代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-脚注（footnote）"><span class="nav-number">1.10.</span> <span class="nav-text">10. 脚注（footnote）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-下划线"><span class="nav-number">1.11.</span> <span class="nav-text">11. 下划线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-内容目录"><span class="nav-number">1.12.</span> <span class="nav-text">12. 内容目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-公式"><span class="nav-number">1.13.</span> <span class="nav-text">13. 公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-转义符"><span class="nav-number">1.14.</span> <span class="nav-text">14. 转义符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-流程图和图标"><span class="nav-number">1.15.</span> <span class="nav-text">15. 流程图和图标</span></a></li></ol></li></ol></div>
             
 
           </div>
